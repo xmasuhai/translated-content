@@ -40,24 +40,27 @@ translation_of: Web/JavaScript/Reference/Global_Objects/Set
 
 ## 实例方法
 
+- {{jsxref("Set.has", "Set.prototype.has(<em>value</em>)")}}
+  - : 返回一个布尔值，表示该值在 `Set` 中存在与否。
 - {{jsxref("Set.add", "Set.prototype.add(<em>value</em>)")}}
   - : 在`Set`对象尾部添加一个元素。返回该 `Set` 对象。
 - {{jsxref("Set.prototype.clear()")}}
   - : 移除`Set`对象内的所有元素。
 - {{jsxref("Set.delete", "Set.prototype.delete(<em>value</em>)")}}
   - : 移除值为 `value` 的元素，并返回一个布尔值来表示是否移除成功。`Set.prototype.has(value)` 会在此之后返回 `false`。
+
+## 迭代方法
+
+- {{jsxref("Set.prototype.@@iterator()", "Set.prototype[@@iterator]()")}}
+  - : 返回一个新的迭代器对象，该对象包含 `Set` 对象中的按插入顺序排列的所有元素的值。
+- {{jsxref("Set.prototype.values()")}}
+  - : 返回一个新的迭代器对象，该对象包含 `Set` 对象中的按插入顺序排列的所有元素的值。
+- {{jsxref("Set.prototype.keys()")}}
+  - : 与 **`values()`** 方法相同，返回一个新的迭代器对象，该对象包含 `Set` 对象中的按插入顺序排列的所有元素的值。
 - {{jsxref("Set.prototype.entries()")}}
   - : 返回一个新的迭代器对象，该对象包含 `Set` 对象中的按插入顺序排列的所有元素的值的 `[value, value]` 数组。为了使这个方法和 `Map` 对象保持相似， 每个值的键和值相等。
 - {{jsxref("Set.forEach", "Set.prototype.forEach(<em>callbackFn</em>[, <em>thisArg</em>])")}}
   - : 按照插入顺序，为 Set 对象中的每一个值调用一次 callBackFn。如果提供了`thisArg`参数，回调中的 `this` 会是这个参数。
-- {{jsxref("Set.has", "Set.prototype.has(<em>value</em>)")}}
-  - : 返回一个布尔值，表示该值在 `Set` 中存在与否。
-- {{jsxref("Set.prototype.keys()")}}
-  - : 与 **`values()`** 方法相同，返回一个新的迭代器对象，该对象包含 `Set` 对象中的按插入顺序排列的所有元素的值。
-- {{jsxref("Set.prototype.values()")}}
-  - : 返回一个新的迭代器对象，该对象包含 `Set` 对象中的按插入顺序排列的所有元素的值。
-- {{jsxref("Set.prototype.@@iterator()", "Set.prototype[@@iterator]()")}}
-  - : 返回一个新的迭代器对象，该对象包含 `Set` 对象中的按插入顺序排列的所有元素的值。
 
 ## 示例
 
